@@ -300,7 +300,7 @@ def preprocess_v1(
     has_image: bool = False
 ) -> Dict:
     conv = conversation_lib.default_conversation.copy()
-    roles = {"human": conv.roles[0], "gpt": conv.roles[1]}
+    roles = {"human": conv.roles[0], "gpt": conv.roles[1], "system": None}
 
     # Apply prompt templates
     conversations = []
